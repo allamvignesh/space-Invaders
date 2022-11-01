@@ -7,14 +7,14 @@ display=pygame.display.set_mode((800,500))
 clock=pygame.time.Clock()
 fps=60
 
-alien = pygame.image.load("sprites//alien.png")
+alien = pygame.image.load("alien.png")
 alien = pygame.transform.scale(alien, (alien.get_size()[0]/5, alien.get_size()[1]/5))
 alienSize = alien.get_size()
 alienPos = [(i*50, j*50+50) for i in range(15) for j in range(3)]
 offset = 1
 al = 1
 
-ship = pygame.image.load("sprites//ship.png")
+ship = pygame.image.load("ship.png")
 ship = pygame.transform.scale(ship, (ship.get_size()[0]/6, ship.get_size()[1]/6))
 shipPos = [0, 400]
 speed = 10
